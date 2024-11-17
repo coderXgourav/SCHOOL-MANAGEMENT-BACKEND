@@ -132,7 +132,6 @@ TeacherAcademicSchema = new Schema({
     }
 });
 
-
 const JobDetailsSchema = new Schema({
     total_experience:{
         type:String
@@ -177,9 +176,6 @@ const LoginSchema = new Schema({
       }
 });
 
-
-
-
 const UserSchema = new Schema({
     basic_details:{type:BasicDetailsSchema},
     address_details:{type:AddressSchema},
@@ -192,5 +188,4 @@ const UserSchema = new Schema({
 });
 
 const UserModel = model('users',UserSchema);
-
 module.exports = UserModel;

@@ -1,7 +1,9 @@
 const {Router} = require("express");
 const adminRouter = Router();
-const {login} = require('../controllers/admin');
+const {login,verifyToken} = require('../controllers/admin');
 
 adminRouter.post("/login",login);
+adminRouter.post("/login-verify",verifyToken);
+
 
 module.exports = adminRouter;
